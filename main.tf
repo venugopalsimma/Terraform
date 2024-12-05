@@ -1,7 +1,7 @@
 resource "local_file" "pet" {
 filename = "/root/pets.txt"
-content = "My cat is ${random_pet.mypet.id}"     (random_pet = resource type,mypet = resource name, id = attribute)
-} 
+content = "My cat is MR.Cat"
+}
 resource "random_pet" "mypet" {
 prefix = "MR"
 separator = "."
